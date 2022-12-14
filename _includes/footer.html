@@ -1,0 +1,125 @@
+<footer class="usa-footer usa-footer--big">
+  <div class="grid-container usa-footer__return-to-top">
+    {% if page.title == "Home" %}
+    <div class="border-top-1px border-base-light margin-bottom-2"></div>
+    {% endif %}
+    <div class="grid-row flex-align-start flex-justify">
+      <a href="#" class="usa-button usa-button--outline border-0" style="text-decoration: none;">Return to top</a>
+      {% if page.title == "Home" %}
+      <div class="grid-row vaccine-container">
+        <div class="vaccine-card">
+          <p class="vaccine-card-content">COVID-19<br>Vaccination</p>
+        </div>
+        <iframe src="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-finder-widget.html" scrolling="no" height="230" frameborder="0" width="280" frameborder="0" title="Vaccine Finder Widget" style="overflow: hidden;"> <!– Vaccine Finder Widget !–> </iframe> 
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="usa-footer__primary-section padding-y-5">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-12">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <div class="grid-row grid-gap-4">
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content">
+                  <ul class="usa-list usa-list--unstyled padding-y-2">
+                    <li class="usa-footer__secondary-link"><a href="https://www.cio.gov">Federal <abbr title="Chief Information Officers">CIO</abbr> Council</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://www.pic.gov" ><abbr title="Performance Improvement Council">Perf. Improvement Council</abbr></a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://www.cdo.gov">Federal <abbr title="Chief Data Officer">CDO</abbr> Council</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://www.evaluation.gov/">Evaluation Officer Council</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content">
+                  <ul class="usa-list usa-list--unstyled padding-y-2">
+                    <li class="usa-footer__secondary-link"><a href="https://www.cfo.gov">Federal <abbr title="Chief Financial Officers">CFO</abbr> Council</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://www.chcoc.gov/">Federal <abbr title="Chief Human Capital Officers">CHCO</abbr> Council</a></li>
+                    <li class="usa-footer__secondary-link"><a href="https://cao.gov/">Federal <abbr title="Chief Acquisition Officers">CAO</abbr> Council</a></li>
+                  </ul>
+                </section>
+              </div>
+              <div class="mobile-lg:grid-col-6 desktop:grid-col-4">
+                <section class="usa-footer__primary-content">
+                  <ul class="usa-list usa-list--unstyled padding-y-2">
+                    <li class="usa-footer__secondary-link"><a href="{{site.baseurl}}/privacy-policy/">Privacy Statement</a></li>
+                    <li class="usa-footer__secondary-link"><a href="{{site.baseurl}}/accessibility-policy/">Accessibility Policy</a></li>
+                    <li class="usa-footer__secondary-link"><a href="mailto:privacy.council@gsa.gov">Contact Us</a></li>
+                    <li class="usa-footer__secondary-link"><a href="{{site.baseurl}}/about-this-site">About this Site</a></li>
+                  </ul>
+                </section>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="ogp-identifier" class="usa-identifier">
+    <section
+      class="usa-identifier__section usa-identifier__section--masthead"
+      aria-label="Agency identifier,"
+    >
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__logos">
+          <a href="https://www.whitehouse.gov/omb/" class="usa-identifier__logo">
+            <img class="usa-identifier__logo-img" src="{{site.baseurl}}/assets/img/logo-omb.png" alt="Office of Management and Budget Logo">
+          </a>
+        </div>
+        <div class="usa-identifier__identity" aria-label="Agency description">
+          <p class="usa-identifier__identity-domain">FPC.gov</p>
+          <p class="usa-identifier__identity-disclaimer">
+            An Official website of the Federal Government</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <nav
+      class="usa-identifier__section usa-identifier__section--required-links"
+      aria-label="Important links,,"
+    >
+      <div class="usa-identifier__container">
+        <ul class="usa-identifier__required-links-list">
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.whitehouse.gov/omb/" class="usa-identifier__required-link usa-link">About OMB</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsa.gov/website-information/accessibility-aids" class="usa-identifier__required-link usa-link">Accessibility support</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsa.gov/reference/freedom-of-information-act-foia" class="usa-identifier__required-link usa-link">FOIA requests</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002" class="usa-identifier__required-link usa-link">No FEAR Act data</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsaig.gov/" class="usa-identifier__required-link usa-link">Office of the Inspector General</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsa.gov/reference/reports/budget-performance" class="usa-identifier__required-link usa-link">Performance reports</a>
+          </li>
+          <li class="usa-identifier__required-links-item">
+            <a href="https://www.gsa.gov/website-information/website-policies" class="usa-identifier__required-link usa-link">Privacy policy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section
+      class="usa-identifier__section usa-identifier__section--usagov"
+      aria-label="U.S. government information and services,,"
+    >
+      <div class="usa-identifier__container">
+        <div class="usa-identifier__usagov-description">
+          Looking for U.S. government information and services?
+        </div>
+        <a href="https://www.usa.gov/" class="usa-link">Visit USA.gov</a>
+      </div>
+    </section>
+  </div>
+
+</footer>

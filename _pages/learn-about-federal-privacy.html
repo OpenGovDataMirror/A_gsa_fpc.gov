@@ -1,0 +1,81 @@
+---
+layout: default
+permalink: /learn-about-federal-privacy-program/
+title: Learn about Federal Privacy
+sub-title: Learn about Federal Privacy
+description: Learn about Federal Privacy
+excerpt: Executive Branch agencies necessarily collect, maintain, use, disclose, and dispose of large amounts of personally identifiable information (PII) to carry out missions mandated by Federal statute. By watching these short videos, learn more about how the Executive Branch of the Federal Government protects your privacy.
+number_of_icons: 4
+priority_icons:
+ - name: Roles in Federal Privacy
+   logo: /assets/img/logos/Video_1.png
+   alt-text: Text reading 'Privacy Considerations' above illustration of people working around a desk and the word 'PII' next two them with two information icons
+   url: /roles-in-federal-privacy/
+   filler: Learn about the different roles in Federal privacy and how they work together to preserve the public’s trust.
+   time: 5 minutes 52 seconds
+ - name: The Privacy Act of 1974
+   logo: /assets/img/logos/Video_2.png
+   alt-text: Four icons showing the topics the video covers, namely, restriction on disclosure, fair information practices, access and amendment, and enforcement
+   url: /privacy-act-1974/
+   filler: Learn about a cornerstone of Federal privacy law and the rights and protections it provides to individuals.
+   time: 7 minutes 30 seconds
+ - name: Privacy Impact Assessments
+   logo: /assets/img/logos/Video_3.png
+   alt-text: Stylized train track with 'what, when, who, and how' as the topics or train stops that the video covers
+   url: /privacy-impact-asessments/
+   filler: Learn about one of the most valuable tools Federal privacy programs use to manage privacy risks.
+   time: 6 minutes 51 seconds
+ - name: Fair Information Practice Principles
+   logo: /assets/img/logos/Video_4.png
+   alt-text: Fair Information Practice Principles
+   url: /fair-info-practice-principles/
+   filler: Learn about the Fair Information Practice Principles (FIPPs), which serve as the foundation for privacy laws and policies applicable to Federal agencies.
+   time: 6 minutes 52 seconds
+---
+
+<section class="usa-section about">
+    <div class="usa-grid">
+        <div class="grid-container ">
+            <div class="priority-tag-line"><h1 class="margin-0 font-ui-2xl">{{ page.title }}</h1></div><br>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="usa-section">
+    <div class="usa-grid">
+        <div class="grid-container ">
+            <div><div class="margin-0 font-sans-sm">{{page.excerpt}}</div></div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class=" grid-container">
+
+    <div class="grid-row grid-gap">
+        {% for icon in page.priority_icons %}
+        <div class="tablet:grid-col-3 learn-about text-center margin-y-2 bg-white padding-2 margin-1 shadow-5 members-hover radius-lg ">
+            {% if icon.url %}
+            <a href="{{ site.baseurl }}{{ icon.url }}" class="text-no-underline text-gray-70" style="display: inline-block;">
+                {% else %}
+                <a href="{{ icon.link }}" class="text-no-underline" style="display: inline-block;">
+                    {% endif %}
+                    <div >
+                        <img style="width:210px;height:150px;object-fit:cover; border: 1px solid #555;" alt="{{ icon.alt-text }}" src="{{site.baseurl}}{{ icon.logo }}" alt="{{ icon.name }} image" />
+                    </div>
+                    <p class="font-sans-sm text-gray-70 text-left text-no-underline">{{ icon.time }}</p>
+                    <p class="font-heading-md text-gray-70 text-left text-no-underline">{{ icon.name }}</p>
+                    <p class="font-sans-sm text-gray-70 text-left text-no-underline">{{ icon.filler }}</p>
+                </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
